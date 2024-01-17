@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-container">
+        <div id="video-controls-container">
+            <div id="video-container">
+                <video id="video-player" src="vid.mp4" type="video/mp4" onended="restart()">
+                </video>
+            </div>
+
+            <div id="controls-container">
+                <button id="play-button" onclick="togglePlay()">Play</button>
+            </div>
+        </div>
+
+        <div id="sliders-container">
+            <div id="leftslider">
+                <p>Temperature: <output id="tempoutput">10</output>°C </p>
+                <input type="range" id="tempslider" class="vertical-slider" value="10" min="10" max="35" step="1" 
+                oninput="tempoutput.value = tempslider.value">
+            </div>
+            <div id="rightslider">
+                <p>Wind Speed: <output id="windoutput">50</output> km/h</p>
+                <input type="range" id="windslider" class="vertical-slider" value="50" min="50" max="300" step="1" 
+                oninput="windoutput.value = windslider.value">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -12,26 +12,24 @@ function updateVideo() {
 
     let videosrc;
 
-    if(tempvalue >= 27 && windvalue >= 119) {
+    if(tempvalue >= 27) {
         if (windvalue >= 252){
-            videosrc = 'vid2.mp4';
-            console.log("vid6");
+            videosrc = 'scenario_6.mp4';
         } else if (windvalue >= 209){
-            videosrc = 'vid.mp4';
-            console.log("vid5");
+            videosrc = 'scenario_5.mp4';
         } else if (windvalue >= 178){
-            videosrc = 'vid2.mp4';
-            console.log("vid4");
+            videosrc = 'scenario_5.mp4';
         } else if (windvalue >= 154){
-            videosrc = 'vid.mp4';
-            console.log("vid3");
+            videosrc = 'scenario_4.mp4';
+        } else if (windvalue >= 119){
+            videosrc = 'scenario_4.mp4';
         } else{
-            videosrc = 'vid2.mp4';
-            console.log("vid2");
+            videosrc = 'scenario_3.mp4';
         }
-    } else{
-        videosrc = 'vid.mp4';
-        console.log("vid1");
+    } else if (windvalue >= 119){
+        videosrc = 'scenario_2.mp4';
+    } else {
+        videosrc = 'scenario_1.mp4';
     }
     video.src = videosrc;
 

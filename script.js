@@ -30,9 +30,9 @@ function updateVideo() {
         videosrc = 'Scenario_2.mp4';
     } else {
         videosrc = 'Scenario_1.mp4';
+
     }
     video.src = videosrc;
-
 }
 
 function togglePlay() {

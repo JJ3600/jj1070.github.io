@@ -39,12 +39,14 @@ function togglePlay() {
     video.style.display = 'block'
     video.play();
     playButton.disabled = true;
+    playButton.style.backgroundColor = 'rgb(163, 163, 163)';
     slider1.disabled = true;
     slider2.disabled = true;
 }
 function restart() {
     video.style.display = 'none'
     playButton.disabled = false;
+    playButton.style.backgroundColor = 'white';
     slider1.disabled = false;
     slider2.disabled = false;
 }

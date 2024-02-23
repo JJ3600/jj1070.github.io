@@ -1,25 +1,19 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    padding: 20px;
+    background-color: rgba(171, 207, 248, 0.747);
 }
-
 #main-container {
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     justify-content: space-between;
     /* min-width: auto;
     max-width: 1200px; */
-    width: 1250px;
+    width: 1290px;
     margin: 0 auto;
-}
+    padding: 5px;
 
-#video-controls-container {
-    display: flex;
-    flex-direction: column;
-    outline: 3px solid rgb(0, 0, 0);
 }
-
 #video-container {
     width: 800px;
     height: 450px;
@@ -36,40 +30,62 @@ body {
 }
 
 #controls-container {
-    width: 50%px;
+    outline: 3px solid rgb(0, 0, 0);
+    width: 800px;
+    height: 80px;
+    background-color: rgba(228, 223, 183, 0.904);
 }
-
 #play-button {
     font-size: 18px;
     padding: 10px 20px;
     cursor: pointer;
     margin: 20px 0px 10px 0px;
+    background-color: rgb(255, 255, 255);
+    outline: 1px solid black;
 }
-
-#sliders-container {
-    width: 350px;
-    margin-top: 100px;
+#instructions {
+    width: 375px;
+    height: 100px;
     outline: 5px solid rgb(0, 0, 0);
     padding: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(236, 56, 56);
+}
+#sliders-container {
+    width: 370px;
+    height: 300px;
+    margin-top: 50px;
+    outline: 5px solid rgb(0, 0, 0);
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
 }
 
 #leftslider{
-    width: 150px;
+    width: 175px;
+    height: 300px;
     float: left;
 }
 
-#rghtslider{
-    width: 150px;
-    float: left;
+#rightslider{
+    width: 175px;
+    height: 300px;
+    float: right;
 }
 
 .vertical-slider {
     -webkit-appearance: none;
     appearance: none;
-    height: 300px;
+    /* height: 300px; */
     border-radius: 5px;
-    background: #ccc;
+    background: #000000;
     outline: none;
     writing-mode: bt-lr;
-    -webkit-appearance: slider-vertical;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    transform: rotate(270deg);
+    /* -webkit-appearance: slider-vertical; */
+    border: 0;
 }
